@@ -1,9 +1,8 @@
 <h1 align='center'>Battle!</h1>
 
-<h2 align='left'><%= @player_1_name %></h2>
+<h2 align='left'><%= @player_1 .name %></h2>
 <h2 align='center'> vs. </h2>
-<h2 align='right'><%= @player_2_name %></h2>
-<h2 align='right'><%= @player_2_name %> HP: 100/100</h2>
+<h2 align='right'><%= @player_2.name %>  HP: <%= @player_2.hp.to_s%>/100</h2>
 <form action="/attack" method="post">
   <button type="submit" name"attack">Attack</button>
 </form>
